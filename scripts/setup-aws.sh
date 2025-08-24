@@ -30,7 +30,6 @@ if [ "$AWS_ACCESS_KEY_ID" == "" ] || [ "$AWS_SECRET_ACCESS_KEY" == "" ]; then
   # else
     export AWS_ACCESS_KEY_ID="${NON_AWS_ACCOUNT_ACCESS_KEY_ID}"
     export AWS_SECRET_ACCESS_KEY="${NON_AWS_ACCOUNT_SECRET_ACCESS_KEY}"
-  fi
 fi
 
 if [ "$AWS_ACCESS_KEY_ID" == "" ] || [ "$AWS_SECRET_ACCESS_KEY" == "" ]; then
