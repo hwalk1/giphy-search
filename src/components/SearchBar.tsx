@@ -1,5 +1,6 @@
 import Input from './ui/input';
 import Button from './ui/button';
+import './SearchBar.css';
 import { useState } from 'react';
 
 interface SearchProps {
@@ -17,13 +18,15 @@ export const SearchBar = ({ onSearch, isLoading }: SearchProps) => {
 
   return (
     <form onSubmit={handleSearch}>
-      <Input
-        type="text"
-        placeholder="Search for GIFs..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
-      <Button>Search</Button>
+      <div className="container">
+        <Input
+          type="text"
+          placeholder="Search for GIFs..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <Button>Search</Button>
+      </div>
     </form>
   );
 };
