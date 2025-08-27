@@ -1,3 +1,4 @@
+## Baseline Webpage
 # Baseline Webpage
 
 A simple React static site that is deployed to AWS using serverless.
@@ -10,6 +11,10 @@ A simple React static site that is deployed to AWS using serverless.
 ![CDN](https://img.shields.io/badge/CDN-Cloudfront-blue?style=plastic)
 ![license](https://img.shields.io/badge/license-MIT-brightgreen?style=plastic)
 ![types](https://img.shields.io/badge/types-TypeScript-blue?style=plastic)
+
+
+## To Run Locally
+- You will need to an API key in the .env file as REACT_APP_GIPHY_API_KEY="your_key_here"
 
 ## Goals
 
