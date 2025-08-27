@@ -1,0 +1,115 @@
+.gif-grid-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.gif-grid-loading-text {
+  font-size: 3rem;
+}
+
+.gif-grid-empty {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.gif-grid-empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.gif-grid-empty-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.gif-grid-container {
+  columns: 1;
+  column-gap: 1rem;
+  padding: 0;
+}
+
+.gif-item {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.gif-item:hover {
+  transform: translateY(-4px);
+}
+
+.gif-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gif-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.gif-item:hover .gif-image {
+  transform: scale(1.05);
+}
+
+.gif-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.gif-item:hover .gif-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gif-actions {
+  opacity: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.gif-item:hover .gif-actions {
+  opacity: 1;
+}
+
+.gif-action-button {
+  height: 2rem !important;
+  width: 4rem !important;
+  padding: 0 !important;
+  margin: 1rem !important;
+}
+
+@media (min-width: 640px) {
+  .gif-grid-container {
+    columns: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .gif-grid-container {
+    columns: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gif-grid-container {
+    columns: 4;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gif-grid-container {
+    columns: 5;
+  }
+}

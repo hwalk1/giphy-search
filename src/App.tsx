@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import SearchBar from './components/SearchBar';
+import { GifGrid } from './components/GifGrid';
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -39,6 +40,7 @@ function App() {
         onSearch={(searchTerm) => getGif(searchTerm)}
         isLoading={false}
       />
+      <GifGrid gifs={gifs} isLoading={isLoading} />
     </div>
   );
 }
